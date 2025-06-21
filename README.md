@@ -36,6 +36,14 @@ Para definir la lista remota hay que editar el archivo **/data/local/PrefKeys.kt
 En el archivo **/data/remote/RetrofitClient.kt** hay que editar donde aparece **http://localhost/** con la URL base del dominio que utilice, sí utilizan un VPN puede ser **http://IP**
 En el archivo **/data/repository/ChannelRepository.kt** donde aparece **http://IP/lista.json** hay que poner la dirección exacta del JSON encriptado que contiene los canales.
 
+Pasos para que la aplicación funcione:
+1- En la carpeta que dice Server debe ser subida a un hosting o usarla localmente para generar el JSON encriptado y luego ser subido a un hosting externo. Dentro de todos los archivos debe estar la misma clave AES que usará la app para desencriptar los canales.
+2- **api_login.php y api_validate.php** son los archivos que manejan los usuarios que se generan con user.php (la clave para acceder al panel de usuarios está dentro del PHP).
+3- **encriptar.php** es el archivo que hay que ejecutar la primera vez para encriptar la lista de canales y que el Panel de Administración de canales puede leerlo y modificarlo.
+4- **index.php** es el archivo del Panel de control para los canales y categorías, desde ahí se modifica todo lo que la app va a leer. Por defecto es **admin y admin**.
+5- Una vez modificados todos los archivos con la misma clave AES se puede ejecutar cada uno de los archivos para así agregar/borrar usuarios (que no está implementado, por defecto no pide Login) y que la app lea el archivo.
+### **Tener en cuenta que sí no es la misma clave AES en todos los archivos y en la app no va a funcionar!**
+
 La aplicación sí la lista es extensa suelen ser "pesada" en ciertos dispositivos con poca RAM.
 
 Básicamente eso es lo que recuerdo por ahora, a medida que voy viendo de agregar nuevas funciones seguramente actualice el repositorio. Sí les sirve o sí ven que algo falla pueden avisar.
