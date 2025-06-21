@@ -41,7 +41,8 @@ Pasos para que la aplicación funcione:
 2- **api_login.php y api_validate.php** son los archivos que manejan los usuarios que se generan con user.php (la clave para acceder al panel de usuarios está dentro del PHP).
 3- **encriptar.php** es el archivo que hay que ejecutar la primera vez para encriptar la lista de canales y que el Panel de Administración de canales puede leerlo y modificarlo.
 4- **index.php** es el archivo del Panel de control para los canales y categorías, desde ahí se modifica todo lo que la app va a leer. Por defecto es **admin y admin**.
-5- Una vez modificados todos los archivos con la misma clave AES se puede ejecutar cada uno de los archivos para así agregar/borrar usuarios (que no está implementado, por defecto no pide Login) y que la app lea el archivo.
+5- Dentro de **users.php** está la clave para ingresar al Panel de Usuarios, se debe cambiar.
+6- Una vez modificados todos los archivos con la misma clave AES se puede ejecutar cada uno de los archivos para así agregar/borrar usuarios (que no está implementado, por defecto no pide Login) y que la app lea el archivo.
 ### **Tener en cuenta que sí no es la misma clave AES en todos los archivos y en la app no va a funcionar!**
 
 La aplicación sí la lista es extensa suelen ser "pesada" en ciertos dispositivos con poca RAM.
