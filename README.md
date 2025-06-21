@@ -26,11 +26,17 @@ https://www.open-epg.com/files/argentina4.xml.txt
 Y el XML que carga los datos del EPG de dichos canales.
 https://www.open-epg.com/files/argentina4.xml
 
+Al cargar la aplicación carga el EPG por primera vez, luego carga solo cada el intervalo de horas que se le especifique, por defecto 24 hs.
+
+En la pantalla de **Configuración** hay un botón de Comprobar Canales que usa un PIN específico para chequear toda la lista de canales e informar en pantalla sí alguno o todos los links de un canal fallan o sí están operativos. El PIN por defecto es 12345678. En el archivo /viewmodel/ChannelDiagnosticsScreenViewModel.kt en la línea: **val secretCode = "12345678"**
+
+En el archivo **/util/EncryptionHelper.kt** se deben definir las claves que se usaran en el servidor para encriptar/desencriptar la lista de canales. Sí las dos claves no coinciden los canales no se van a cargar. Se puede usar un generador online para generar o alguna IA se le pide que genere una clave AES y su respectiva clave secundaria o usar un generador online como: **https://generate-random.org/encryption-key-generator**
+
 La aplicación sí la lista es extensa suelen ser "pesada" en ciertos dispositivos con poca RAM.
 
 Básicamente eso es lo que recuerdo por ahora, a medida que voy viendo de agregar nuevas funciones seguramente actualice el repositorio. Sí les sirve o sí ven que algo falla pueden avisar.
 
-Para editar dichos archivos se puede usar Android Studio 2024.3.2 o superior aunque seguramente funcione en otras versiones.
+Para editar dichos archivos se puede usar **Android Studio 2024.3.2** o superior aunque seguramente funcione en otras versiones.
 
 ### El uso de la app es LEGAL, sí alguien hace mal uso de ella no me hago cargo ;)
 
