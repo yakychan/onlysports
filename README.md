@@ -54,3 +54,16 @@ Para editar dichos archivos se puede usar **Android Studio 2024.3.2** o superior
 ### El uso de la app es LEGAL, sí alguien hace mal uso de ella no me hago cargo ;)
 
 ![Android Studio](captura.png)
+
+Este es un ejemplo de como sería la lista de canales:
+![Lista de canales](captura1.png)
+
+Los campos son:
+**channelID** identificador único de cada canal (igual que el EPG sí se quiere utilizar).
+**name** el nombre del canal, como aparecerá en la lista.
+**uri** es la URL del canal, sí es MPD busca la licencia en el campo **drm_license_uri** si es m3u8 ignora dicho campo.
+**icono** es el logo del canal.
+**drm_scheme** por lo gral. cuando es MPD suelen ser encriptados en clearkey pero todo depende del servidor, puede ser widevine, etc. sí es m3u8 ese campo se ignora.
+**drm_license_uri** es la URL de la licencia para abrir el canal MPD encriptado, sí el canal es MPD sin encriptación no es necesario completar este campo.
+
+## Los campos OBLIGATORIOS son "channelID", "name", "uri" y "icono". Sí falta alguno de esos la app no va a cargar.
