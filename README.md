@@ -23,3 +23,5 @@ Básicamente eso es lo que recuerdo por ahora, a medida que voy viendo de agrega
 Para editar dichos archivos se puede usar Android Studio 2024.3.2 o superior aunque seguramente funcione en otras versiones.
 
 El uso de la app es LEGAL, sí alguien hace mal uso de ella no me hago cargo ;)
+
+![Android Studio](captura.png)
