@@ -32,6 +32,10 @@ En la pantalla de **Configuración** hay un botón de Comprobar Canales que usa 
 
 En el archivo **/util/EncryptionHelper.kt** se deben definir las claves que se usaran en el servidor para encriptar/desencriptar la lista de canales. Sí las dos claves no coinciden los canales no se van a cargar. Se puede usar un generador online para generar o alguna IA se le pide que genere una clave AES y su respectiva clave secundaria o usar un generador online como: **https://generate-random.org/encryption-key-generator**
 
+Para definir la lista remota hay que editar el archivo **/data/local/PrefKeys.kt**.
+En el archivo **/data/remote/RetrofitClient.kt** hay que editar donde aparece **http://localhost/** con la URL base del dominio que utilice, sí utilizan un VPN puede ser **http://IP**
+En el archivo **/data/repository/ChannelRepository.kt** donde aparece **http://IP/lista.json** hay que poner la dirección exacta del JSON encriptado que contiene los canales.
+
 La aplicación sí la lista es extensa suelen ser "pesada" en ciertos dispositivos con poca RAM.
 
 Básicamente eso es lo que recuerdo por ahora, a medida que voy viendo de agregar nuevas funciones seguramente actualice el repositorio. Sí les sirve o sí ven que algo falla pueden avisar.
