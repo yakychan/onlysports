@@ -67,3 +67,7 @@ Los campos son:
 **drm_license_uri** es la URL de la licencia para abrir el canal MPD encriptado, sí el canal es MPD sin encriptación no es necesario completar este campo.
 
 ## Los campos OBLIGATORIOS son "channelID", "name", "uri" y "icono". Sí falta alguno de esos la app no va a cargar.
+
+Panel de control:
+![Panel de control](paneldecontrol.png)
+![Panel de control](paneldecontrol2.png)
