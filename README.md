@@ -2,7 +2,7 @@
 ![Aplicacion](captura2.png)
 ![Aplicacion](captura3.png)
 
-##La aplicación no incluye ningún canal, cada persona se hace responsable de como la desea utilizar. Las capturas anteriores son ilustrativas.
+## La aplicación no incluye ningún canal, cada persona se hace responsable de como la desea utilizar. Las capturas anteriores son ilustrativas.
 
 Comparto todo el código de la aplicación para quién quiera modificarla y usarla.
 
