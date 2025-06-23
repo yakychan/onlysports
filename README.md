@@ -76,3 +76,4 @@ Los campos son:
 Panel de control:
 ![Panel de control](paneldecontrol.png)
 ![Panel de control](paneldecontrol2.png)
+![Panel de control](captura4.png)
