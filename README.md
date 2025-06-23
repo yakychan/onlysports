@@ -1,4 +1,9 @@
 # OnlySports
+![Aplicacion](captura2.png)
+![Aplicacion](captura3.png)
+
+##La aplicación no incluye ningún canal, cada persona se hace responsable de como la desea utilizar. Las capturas anteriores son ilustrativas.
+
 Comparto todo el código de la aplicación para quién quiera modificarla y usarla.
 
 Está optimizada para usarla en dispositivos con Android TV o Google TV pero funciona en teléfonos y tablets con Android. La aplicación usa la libreria Exoplayer de Media3 para reproducir los canales.
