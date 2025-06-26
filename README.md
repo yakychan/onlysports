@@ -52,6 +52,8 @@ Pasos para que la aplicación funcione:
 
 La aplicación sí la lista es extensa suelen ser "pesada" en ciertos dispositivos con poca RAM.
 
+## Se incluye una nueva versión que el único cambio es que tiene Control Parental, oculta o muestra la categoría que se llame XXX u otro nombre que se define por código. El PIN por defecto es 6969, se puede cambiar por código también.
+
 Básicamente eso es lo que recuerdo por ahora, a medida que voy viendo de agregar nuevas funciones seguramente actualice el repositorio. Sí les sirve o sí ven que algo falla pueden avisar.
 
 Para editar dichos archivos se puede usar **Android Studio 2024.3.2** o superior aunque seguramente funcione en otras versiones.
