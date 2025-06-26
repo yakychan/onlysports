@@ -1,5 +1,4 @@
 # OnlySports
-[![Alt text](https://img.youtube.com/vi/nATpFstJVpI/0.jpg)]([https://www.youtube.com/watch?v=nATpFstJVpI](https://www.youtube.com/watch?v=nATpFstJVpI))
 ![Aplicacion](captura2.png)
 ![Aplicacion](captura3.png)
 
