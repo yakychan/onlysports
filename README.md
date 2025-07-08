@@ -75,6 +75,23 @@ Los campos son:
 
 ## Los campos OBLIGATORIOS son "channelID", "name", "uri" y "icono". Sí falta alguno de esos la app no va a cargar.
 
+
+### Agregada nueva actualización que ahora permite adjuntar películas en formato m3u8, mp4, mkv, etc. dependiendo del dispositivo donde se vaya a reproducir MKV puede no funcionar. Copiar peliculas.php y un archivo vacío que se llama peliculas.json en el mismo directorio donde está el index.php que es para administrar canales. Ejecutar peliculas.php y va a leer por primera vez peliculas.json vacío y va a permitir agregar nuevas peliculas etc. que leerá la aplicación. No olvidar usar la misma clave AES que en la aplicación en el archivo de peliculas.php y index.php porque sino la aplicación ni los php van a leer los archivos encriptados. 
+
+## También agregado un módulo de actualización, que sí hay una versión nueva permita actualizar desde la misma app sin necesidad de salir de ella.
+El archivo se debe ubicar en el servidor con el nombre de update_info.json o el que se desee y modificarlo en el archivo **/viewmodel/UpdateViewModel.kt**
+
+El contenido del archivo sería similar a este:
+**{
+  "updateAvailable": true,
+  "isMandatory": true,
+  "latestVersionCode": 105,
+  "latestVersionName": "1.0.5",
+  "apkUrl": "http://IP/descargas/vtv_android_tv_v1.0.5.apk",
+  "releaseNotes": "- Corrección de errores.\n- Agregado el módulo de películas.\n- Esta actualización es obligatoria para continuar usando la aplicación."
+}
+**
+
 Panel de control:
 ![Panel de control](paneldecontrol.png)
 ![Panel de control](paneldecontrol2.png)
