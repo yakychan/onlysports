@@ -81,16 +81,7 @@ Los campos son:
 ## También agregado un módulo de actualización, que sí hay una versión nueva permita actualizar desde la misma app sin necesidad de salir de ella.
 El archivo se debe ubicar en el servidor con el nombre de update_info.json o el que se desee y modificarlo en el archivo **/viewmodel/UpdateViewModel.kt**
 
-El contenido del archivo sería similar a este:
-**{
-  "updateAvailable": true,
-  "isMandatory": true,
-  "latestVersionCode": 105,
-  "latestVersionName": "1.0.5",
-  "apkUrl": "http://IP/descargas/vtv_android_tv_v1.0.5.apk",
-  "releaseNotes": "- Corrección de errores.\n- Agregado el módulo de películas.\n- Esta actualización es obligatoria para continuar usando la aplicación."
-}
-**
+El contenido del archivo sería similar al que se adjunta en los archivos de descarga.
 
 Panel de control:
 ![Panel de control](paneldecontrol.png)
