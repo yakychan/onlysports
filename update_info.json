@@ -1,0 +1,8 @@
+{
+  "updateAvailable": true,
+  "isMandatory": true,
+  "latestVersionCode": 105,
+  "latestVersionName": "1.0.5",
+  "apkUrl": "http://IP/descargas/vtv_android_tv_v1.0.5.apk",
+  "releaseNotes": "- Corrección de errores.\n- Agregado el módulo de películas.\n- Esta actualización es obligatoria para continuar usando la aplicación."
+}
